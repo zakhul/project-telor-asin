@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Pemilik - Telur Asin Nusantara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="admin">
+    <aside class="sidebar">
+      <div class="side-brand">🥚 Pemilik</div>
+      <p class="side-user">Masuk sebagai <span id="admin-name"></span></p>
+      <button class="nav-btn" data-view="dashboard">📊 Dashboard</button>
+      <button class="nav-btn" data-view="products">🥚 Produk</button>
+      <button class="nav-btn" data-view="orders">📦 Pesanan</button>
+      <button class="nav-btn" id="btn-logout">🚪 Keluar</button>
+    </aside>
+    <main id="content" class="main"></main>
+  </div>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

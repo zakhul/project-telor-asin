@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telur Asin Nusantara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">🥚 Telur Asin Nusantara</a>
+    <nav id="nav-user"></nav>
+    <button id="btn-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+  </header>
+
+  <section class="hero">
+    <h1>Telur asin gurih, kuning berminyak, dibuat segar</h1>
+    <p>Pesan online, kami antar ke rumah Anda.</p>
+  </section>
+
+  <main class="container">
+    <h2>Produk Kami</h2>
+    <div id="products" class="grid"></div>
+  </main>
+
+  <footer>Telur Asin Nusantara · Pesanan diproses setelah pembayaran dikonfirmasi</footer>
+
+  <aside id="cart" class="cart hidden">
+    <div class="row">
+      <h3>Keranjang</h3>
+      <button id="btn-close-cart" class="link">Tutup</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-total"><span>Subtotal</span><strong id="cart-total">Rp 0</strong></div>
+    <button id="btn-checkout" class="btn primary full">Checkout</button>
+  </aside>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

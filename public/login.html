@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk - Telur Asin Nusantara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth">
+    <div class="auth-card">
+      <a href="/" class="brand">🥚 Telur Asin Nusantara</a>
+      <h2>Masuk</h2>
+
+      <div class="tabs">
+        <button class="tab active" data-portal="customer">Pelanggan</button>
+        <button class="tab" data-portal="admin">Pemilik</button>
+      </div>
+
+      <form id="form-login">
+        <label>Email <input name="email" type="email" required></label>
+        <label>Password <input name="password" type="password" required></label>
+        <button class="btn primary full" type="submit">Masuk</button>
+      </form>
+
+      <div id="register-box">
+        <p class="muted center">Belum punya akun?
+          <button class="link" id="btn-show-reg" type="button">Daftar sebagai pelanggan</button>
+        </p>
+        <form id="form-register" class="hidden">
+          <h3>Daftar Pelanggan</h3>
+          <label>Nama lengkap <input name="nama" required></label>
+          <label>Nomor WhatsApp <input name="no_hp"></label>
+          <label>Email <input name="email" type="email" required></label>
+          <label>Password (min. 6 karakter) <input name="password" type="password" minlength="6" required></label>
+          <button class="btn primary full" type="submit">Daftar</button>
+        </form>
+      </div>
+
+      <p id="msg" class="msg"></p>
+    </div>
+  </div>
+  <script src="/js/common.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
