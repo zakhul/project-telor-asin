@@ -1,0 +1,13 @@
+# Dependensi (diinstal ulang lewat npm install)
+node_modules/
+
+# Rahasia: jangan pernah diupload ke GitHub
+.env
+
+# Database lokal dan file sementara
+data/
+*.db
+*.db-shm
+*.db-wal
+*.log
+.DS_Store

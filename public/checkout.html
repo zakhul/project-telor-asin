@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - Telur Asin Nusantara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">🥚 Telur Asin Nusantara</a>
+    <nav id="nav-user"></nav>
+  </header>
+
+  <main class="container">
+    <h2>Checkout</h2>
+    <div class="checkout">
+      <form id="form-checkout" class="card">
+        <label>Nama penerima <input name="nama_pelanggan" required></label>
+        <label>Nomor WhatsApp <input name="no_hp" required placeholder="08xxxxxxxxxx"></label>
+        <label>Alamat lengkap <textarea name="alamat" rows="3" required></textarea></label>
+        <label>Metode pengiriman <select name="metode_pengiriman" id="sel-kirim"></select></label>
+        <label>Metode pembayaran <select name="metode_pembayaran" id="sel-bayar"></select></label>
+        <label>Catatan (opsional) <textarea name="catatan" rows="2"></textarea></label>
+        <button class="btn primary full" type="submit">Buat Pesanan</button>
+      </form>
+
+      <aside class="card">
+        <h3>Ringkasan</h3>
+        <div id="sum-items"></div>
+        <div class="cart-total"><span>Ongkir</span><span id="sum-ongkir">Rp 0</span></div>
+        <div class="cart-total"><strong>Total</strong><strong id="sum-total">Rp 0</strong></div>
+        <p class="muted">Setelah pesanan dibuat, admin akan mengirim instruksi pembayaran lewat WhatsApp.</p>
+      </aside>
+    </div>
+
+    <div id="success" class="card hidden"></div>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cek Pesanan - Telur Asin Nusantara</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">🥚 Telur Asin Nusantara</a>
+    <nav id="nav-user"></nav>
+  </header>
+  <main class="container">
+    <h2>Cek Status Pesanan</h2>
+    <form id="form-cari" class="card" style="display:flex;gap:8px;flex-wrap:wrap;align-items:end">
+      <label style="flex:1;min-width:220px;margin:0">Kode pesanan
+        <input id="kode" name="kode" placeholder="contoh: TA20261023-7F3K" required>
+      </label>
+      <button class="btn primary" type="submit">Cek</button>
+    </form>
+    <div id="hasil"></div>
+  </main>
+  <script src="/js/common.js"></script>
+  <script src="/js/konfirmasi.js"></script>
+</body>
+</html>
